@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 import NumberFormat from 'react-number-format';
@@ -11,7 +11,7 @@ const [operator,setOperator] = useState(null);
 const [total,setTotal] = useState(false);
 
 const inputNum = e => {
-  if(curState.includes(".") && e.target.innerText === ".") return
+  if(curState.includes(".") && e.target.innerText === ".") return;
 
   if(total){
     setPreState("")
